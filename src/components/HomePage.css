@@ -1,0 +1,84 @@
+/* HomePage.css */
+
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #111, #000 70%);
+  color: #eaeaea;
+  text-align: center;
+  padding: 2rem;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* Headline */
+.HomePage h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #00f7ff; /* cyan glow */
+  text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff88, 0 0 30px #00f7ff55;
+}
+
+/* Subheadline */
+.HomePage h3 {
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+  max-width: 650px;
+  line-height: 1.7;
+  color: #ccc;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Custom Neon Button */
+button {
+  padding: 0.9rem 2.2rem;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  border: 2px solid #00f7ff;
+  background: transparent;
+  color: #00f7ff;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 8px #00f7ff44;
+}
+
+button:hover {
+  background: #00f7ff;
+  color: #000;
+  transform: scale(1.08);
+  box-shadow: 0 0 15px #00f7ff, 0 0 30px #00f7ff77;
+}
+
+/* Add a subtle entrance animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.HomePage h1,
+.HomePage h3,
+button {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.HomePage h3 {
+  animation-delay: 0.2s;
+}
+
+button {
+  animation-delay: 0.4s;
+}
