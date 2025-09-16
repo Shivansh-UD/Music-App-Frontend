@@ -47,6 +47,18 @@ export default function Login(){
 
             {showErrorMessage && <div className="errorMessage">Authentication Failed. Please check your credentials.</div>}
 
+            <div className="LoginForm">
+                <label>User Name:</label>
+                <input type="text" name ="username" placeholder="Enter Username" value = {username} onChange={handleUsernameChange}/> {/* Here we are using the state and the function */}
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type="password" name ="password" placeholder="Enter Password" value = {password} onChange={handlePasswordChange} /> {/* Here we are using the state and the function */}
+            </div> 
+            <div>
+                <button type="button" name="login" onClick={handleSubmit}>Login</button>                
+            </div>
+
 
         </div>
 
