@@ -31,7 +31,7 @@ export default function Login(){
     function handleSubmit(){
         if(authContext.login(username, password)){
            
-            navigate() //in JS if we want to use a variable anywhere like in this line, we have to do `${variable name}`
+            navigate(`/welcome/${username}`) //in JS if we want to use a variable anywhere like in this line, we have to do `${variable name}`
 
         }
         else{
@@ -46,7 +46,7 @@ export default function Login(){
             <h2>Please Login Credentials</h2>
 
             {showErrorMessage && <div className="errorMessage">Authentication Failed. Please check your credentials.</div>}
-            
+
 
         </div>
 
