@@ -1,11 +1,11 @@
 import './App.css';
-import HomePage from './components/HomePage';
+import MusicApp from './components/MusicApp';
 
 function App() {
   return (
-    <div className="App">
-      <HomePage />
-    </div>
+      <div className="App">
+        <MusicApp />
+      </div>
   );
 }
 

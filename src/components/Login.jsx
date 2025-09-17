@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAuth } from './security/AuthContext';
 import { useNavigate } from 'react-router-dom' 
+import './Login.css';
 
 
 
@@ -28,17 +29,18 @@ export default function Login(){
     }
 
     //hardcoded authentication
-    function handleSubmit(){
-        if(authContext.login(username, password)){
-           
-            navigate(`/welcome/${username}`) //in JS if we want to use a variable anywhere like in this line, we have to do `${variable name}`
+    function handleSubmit() {
+    const success = authContext.login(username, password);
 
-        }
-        else{
-            setShowErrorMessage(true);
-        }
-
+    if (success) {
+        setShowErrorMessage(false); // clear error if previously shown
+        navigate(`/songs/${username}`);
+    } else {
+        setShowErrorMessage(true);
     }
+}
+
+
 
     return(
 
