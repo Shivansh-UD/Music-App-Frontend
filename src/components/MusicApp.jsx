@@ -28,7 +28,7 @@ export default function MusicApp(){
                     <Routes>
                         <Route path = '/' element = {<HomePage /> } />
                         <Route path = '/login' element = {<HomePage />} />
-                        <Route path = '/songs/:username' element = {
+                        <Route path = '/welcome/:username' element = {
                             
                             <AuthenticatedRoute>
                                 <WelcomePage />
@@ -48,7 +48,7 @@ export default function MusicApp(){
                               } />
 
                          {/** we are passing the id as a parameter into the path */}
-                         <Route path = '/songs/:id' element = {
+                         <Route path = '/song/:id' element = {
                               <AuthenticatedRoute>
                                 <DisplaySongById/>
                               </AuthenticatedRoute>

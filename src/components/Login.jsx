@@ -34,7 +34,7 @@ export default function Login(){
 
     if (success) {
         setShowErrorMessage(false); // clear error if previously shown
-        navigate(`/songs/${username}`);
+        navigate(`/welcome/${username}`);
     } else {
         setShowErrorMessage(true);
     }
@@ -45,7 +45,7 @@ export default function Login(){
     return(
 
         <div className="Login">
-            <h2>Please Login Credentials</h2>
+            <h2>Please Enter Login Credentials</h2>
 
             {showErrorMessage && <div className="errorMessage">Authentication Failed. Please check your credentials.</div>}
 

@@ -45,7 +45,7 @@ export default function ListAllSongs() {
                                     <td>{song.songName}</td>
                                     <td>{song.artistName}</td>
                                     <td>{song.songLength}</td>
-                                    <td>{song.downloads.toLocaleString()}</td>
+                                    <td>{song.downloads?.toLocaleString()}</td>
                                 </tr>
                             ))}
                         </tbody>

@@ -22,8 +22,7 @@ export default function HomePage() {
             {showLogin && (
                 <div className="modal-overlay" onClick={() => setShowLogin(false)}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                        <button className="close-btn" onClick={() => setShowLogin(false)}>X</button>
-                        <Login />
+                    <Login />
                     </div>
                 </div>
             )}

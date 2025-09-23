@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import './WelcomePage.css';
 
 
 export default function WelcomePage(){
@@ -11,6 +12,9 @@ export default function WelcomePage(){
 
             <div>
                 Look at all songs - <Link  to= "/songs">All Songs</Link>
+            </div>
+            <div>
+                Search songs by ID - <Link  to= "/song/:id">Songs By ID</Link>
             </div>
         </div>
     )

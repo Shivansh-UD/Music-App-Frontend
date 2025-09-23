@@ -19,3 +19,7 @@ const apiClient = axios.create(
 
 export const retriveAllSongs
     = () => apiClient.get('/songs');
+
+
+export const retriveSingleSong
+    = (id) => apiClient.get(`/songs/${id}`, {withCredentials: true})
