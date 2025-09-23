@@ -36,6 +36,7 @@ export default function ListAllSongs() {
                                 <th>Artist</th>
                                 <th>Length</th>
                                 <th>Downloads</th>
+                                <th>Spotify Link</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -46,6 +47,7 @@ export default function ListAllSongs() {
                                     <td>{song.artistName}</td>
                                     <td>{song.songLength}</td>
                                     <td>{song.downloads?.toLocaleString()}</td>
+                                    <td></td>
                                 </tr>
                             ))}
                         </tbody>

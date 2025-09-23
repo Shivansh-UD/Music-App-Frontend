@@ -1,9 +1,5 @@
 import axios from 'axios'
 
-
-
-
-
 /**
  * This allows us to create the base URL once and just append it with whatever links we want. So we dont have to write this part everytime
  * 
@@ -23,3 +19,6 @@ export const retriveAllSongs
 
 export const retriveSingleSong
     = (id) => apiClient.get(`/songs/${id}`, {withCredentials: true})
+
+
+
